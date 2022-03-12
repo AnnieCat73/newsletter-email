@@ -35,6 +35,7 @@ support and for those that do NOT support modern CSS, like media queries. I am u
 - I created a fictitious company and I heavily customised the email content
 - I added images from https://www.freepik.com. They are optimised and hosted online
 - I coded the email follwing CSS2 specificaton, using tables, inline CSS and div/media queries for email clients that support them
+- Made it look as good as possible for dark mode
 - I used Desktop-first approach as that's the best practice for email development
 - I tested my email using Litmus.
 - I uploaded the email the web via
