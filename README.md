@@ -43,19 +43,18 @@ support and for those that do NOT support modern CSS, like media queries. I am u
 ### Built with
 
 - HTML5 markup with CSS2
-- The HTML document needs the following for the email to work on Outlook on Windows:
-  '<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">',
-- '<meta name="x-apple-disable-message-reformatting"> ' prevents any unwanted scaling or zooming from Apple
-- '<meta http-equiv="X-UA-Compatible" content="IE=edge" />' used for improving rendering in Iternet Explorer 9 or lower
-- XML Tag ensures that Microsoft Outlook transforms everything in our email to adapt to the screen zoom percentage in Windows
-- Inline CSS which is best practice for email as some clients strip out the <head> of emails
-- Some media queries within <style> tag in <head> for clients that do support them. This is for enhancement only
-- For apps that support modern CSS I am using an outer container using a <div> which has the use of max-width and display: inline-block
+- An HTML Tag that defines the XML and OOMXML (Office Open XML) which The HTML document needs for the email to work on Outlook on Windows
+- An Apple Scaling Meta Tag that prevents any unwanted scaling or zooming from Apple
+- An IE9 Meta Tag used for improving rendering in Iternet Explorer 9 or lower
+- An XML Tag that ensures that Microsoft Outlook transforms everything in our email to adapt to the screen zoom percentage in Windows
+- Inline CSS which is best practice for email as some clients strip out the <head> tag of emails
+- Some media queries within the <style> tag in the <head> tag for clients that do support them. This is for enhancement only
+- For apps that support modern CSS I am using an outer container in the form of a div which has the use of max-width and display: inline-block
   properties
 - For email clients that do not support modern CSS I use Ghost tables which are restrictive table layouts for Outlook email clients
-- Divs, max-width and display:inline are used for layouts with 2 and more columns. For a single column layout I use tables
+- Divs, max-width and display:inline-block are used for layouts with 2 and more columns. For a single column layout I use tables
 - For 2 columns and more I also have a nested div inside each column for padding. This is applied to the ghost table cells for Outlook
-- use of a spacer <div> to create space between blocks/sections
+- use of a spacer div to create space between sections
 - Desktop-first workflow
 
 ### What I learned
