@@ -47,14 +47,14 @@ support and for those that do NOT support modern CSS, like media queries. I am u
 - An Apple Scaling Meta Tag that prevents any unwanted scaling or zooming from Apple
 - An IE9 Meta Tag used for improving rendering in Iternet Explorer 9 or lower
 - An XML Tag that ensures that Microsoft Outlook transforms everything in our email to adapt to the screen zoom percentage in Windows
-- Inline CSS which is best practice for email as some clients strip out the <head> tag of emails
-- Some media queries within the <style> tag in the <head> tag for clients that do support them. This is for enhancement only
+- Inline CSS which is best practice for email as some clients strip out the head tag of emails
+- Some media queries within the style tag in the head tag for clients that do support them. This is for enhancement only
 - For apps that support modern CSS I am using an outer container in the form of a div which has the use of max-width and display: inline-block
   properties
 - For email clients that do not support modern CSS I use Ghost tables which are restrictive table layouts for Outlook email clients
 - Divs, max-width and display:inline-block are used for layouts with 2 and more columns. For a single column layout I use tables
 - For 2 columns and more I also have a nested div inside each column for padding. This is applied to the ghost table cells for Outlook
-- use of a spacer div to create space between sections
+- Use of a spacer div to create space between sections
 - Desktop-first workflow
 
 ### What I learned
