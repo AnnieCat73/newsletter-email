@@ -15,6 +15,8 @@
 
 A responsive promotional email without media queries
 
+I have tested the email on 70 plus different devices and email clients. The email works fine in the majority of the email clients.
+
 ### The challenge
 
 Creating a fully responsive email without media queries. Most email apps support modern CSS and media queries
@@ -37,7 +39,7 @@ support and for those that do NOT support modern CSS, like media queries. I am u
 - I coded the email follwing CSS2 specificaton, using tables, inline CSS and div/media queries for email clients that support them
 - Made it look as good as possible for dark mode
 - I used Desktop-first approach as that's the best practice for email development
-- I tested my email using Litmus.
+- I tested my email using Email on Acid.
 - I uploaded the email the web via
 
 ### Built with
@@ -47,7 +49,7 @@ support and for those that do NOT support modern CSS, like media queries. I am u
 - An Apple Scaling Meta Tag that prevents any unwanted scaling or zooming from Apple
 - An IE9 Meta Tag used for improving rendering in Iternet Explorer 9 or lower
 - An XML Tag that ensures that Microsoft Outlook transforms everything in our email to adapt to the screen zoom percentage in Windows
-- Inline CSS which is best practice for email as some clients strip out the head tag of emails
+- Inline CSS which is best practice for email as some clients strip out the head tag in emails
 - Some media queries within the style tag in the head tag for clients that do support them. This is for enhancement only
 - For apps that support modern CSS I am using an outer container in the form of a div which has the use of max-width and display: inline-block
   properties
