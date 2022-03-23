@@ -28,6 +28,16 @@
   </xml>
   </noscript>
   <![endif]-->
+
+  <!--[if mso]> 
+    <style>
+      .keep-white {
+        mso-style-textfill-type:gradient;
+        mso-style-textfill-fill-gradientfill-stoplist:"0 \#FFFFFF 0 100000\,100000 \#FFFFFF 0 100000";
+        color:#000000 !important;
+      }
+  </style>
+  <![endif]-->
   <style>
     :root {
       color-scheme: light dark;
@@ -42,8 +52,6 @@
       text-decoration: underline !important;
       font-weight:bold !important;
     }
-      
-      
     @media screen and (max-width: 500px) {
       .heading-title {
         font-size:28px!important;
@@ -65,24 +73,28 @@
         font-weight: normal!important;
       }
     }
-      
     @media screen and (min-width: 501px) {
       .two-col .column {
         max-width: 50%!important;
       }
     }
-
-    
-
     @media (prefers-color-scheme:dark) {
-      .dark-background { background-color:#111 !important; }
-      .dark-column { background-color:#333 !important; }
-      .dark-title { color:#fff !important; }
-      .dark-text { color:#ddd !important; }
+      .dark-background:not([class^="x_"]) { background-color:#111 !important; }
+      .dark-column:not([class^="x_"]) { background-color:#111 !important; }
+      .dark-title:not([class^="x_"]) { color:#fff !important; }
+      .dark-text:not([class^="x_"]) { color:#ddd !important; }
+      .dark-black { color: #030303 !important; }
+      .dark-white:not([class^="x_"]) { color: #fff !important; }
       .dark-padding { padding: 32px !important; }
-      .dark-btn { padding: 32px !important; }
-      .dark-blue { color: #5f9fff!important;}
+      .dark-blue:not([class^="x_"]) { color: #5f9fff !important;}
     }
+    [data-ogsb] .dark-blue { color:#5f9fff !important; }
+    [data-ogsb] .dark-white { color:#fff !important; }
+    [data-ogsb] .dark-column { background-color:#111 !important; }
+    [data-ogsb] .dark-background { background-color:#111 !important; }
+    [data-ogsb] .dark-title { color:#ffffff !important; }
+    [data-ogsb] .dark-text { color:#ddd !important; }
+    
   </style>
 </head>
 
@@ -121,14 +133,14 @@
                 </td>
               </tr>
               <tr>
-                <td align="center !important" class="dark-column" align="left" style="padding:32px;text-align:left;background-color:#ffffff;">
-                  <h1 class="heading-title dark-title" style="margin:0px;font-family: Arial, Helvetica, sans-serif;font-size:34px;color:#050c26;line-height:40px;">The job market is evolving. Here's what we learned in 2022</h1>
+                <td class="dark-column" align="left" style="padding:32px;text-align:left;background-color:#ffffff;">
+                  <h1 class="dark-title" style="margin:0px;font-family: Arial, Helvetica, sans-serif;font-size:34px;color:#050c26;line-height:40px;">The job market is evolving. Here's what we learned in 2022</h1>
                   <p class="dark-text" style="margin:25px 0px;font-family: Arial, Helvetica, sans-serif;font-size:16px;color:#050c26;line-height:22px;">Over the past year, work opportunities have increased - introducing 
                     more access, opportunity, and flexibility to the place of work than ever before - and top talent is reaping the benefits. In 2022, <strong style="line-height:inherit;">26%&nbsp;</strong> of employees left their job for exciting new interests.</p>
                   <p class="dark-text" style="margin:0px 0px 25px;font-family: Arial, Helvetica, sans-serif;font-size:16px;mso-line-height-alt:14px;color:#050c26;line-height:22px;">Join the change - start your JobMatching profile and browse
                     over <strong>10,000</strong> opportunities from mission-led startups doing great
                     things in 2022. </p>
-                  <p align="center !important" style="margin:0;font-family:Arial,sans-serif;font-size:14px;text-align:center !important;"><a align="center !important" href="https://example.com/" target="_blank" style="background: #0a6cff;text-decoration: none; padding: 12px 25px; color: #ffffff; border-radius: 4px; display:block; mso-padding-alt:0;text-underline-color:#ffffff;text-align: center !important;"><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%;mso-text-raise:20pt">&nbsp;</i><![endif]--><span style="mso-text-raise:10pt;font-weight:bold;text-align: center;">Check out Trending Jobs & Rapidly-Growing Startups</span><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%">&nbsp;</i><![endif]--></a>
+                  <p style="margin:0;font-family:Arial,sans-serif;font-size:14px;text-align:center;"><a class="keep-white"  href="https://example.com/" target="_blank" style="background: #0a6cff;text-decoration: none; padding: 12px 25px; color: #ffffff; border-radius: 4px; display:block; mso-padding-alt:0;text-underline-color:#ffffff;text-align: center;"><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%;mso-text-raise:20pt">&nbsp;</i><![endif]--><span style="mso-text-raise:10pt;font-weight:bold;text-align: center;">Check out Trending Jobs & Rapidly-Growing Startups</span><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%">&nbsp;</i><![endif]--></a>
                   </p>
                 </td>
               </tr>
@@ -151,7 +163,7 @@
               </td>
               <td style="width:50%;padding:32px;background-color:#ffffff;" valign="middle">
               <![endif]-->
-              <div class="column" style="width:100%; max-width:300px;display:inline-block;vertical-align:middle;background-color: #ffffff;">
+              <div class="column dark-column" style="width:100%; max-width:300px;display:inline-block;vertical-align:middle;background-color: #ffffff;">
                 <div class="padding dark-padding" style="padding:32px;background-color: #ffffff;">
                   <p style="margin:0;font-family:Arial,sans-serif;font-size:14px;line-height:18px;">
                     <img src="https://i.postimg.cc/htzL7J6z/globe.jpg" width="300" alt="Opportunities rising all over the world" style="display:block;width:300px;max-width:100%;height:auto;border:0;"/>
@@ -182,7 +194,7 @@
               </td>
               <td style="width:50%;padding:32px;background-color: #ffffff;" valign="middle" dir="ltr">
               <![endif]-->
-              <div class="column" style="width:100%; max-width:300px;display:inline-block;vertical-align:middle;direction:ltr;background-color: #ffffff;">
+              <div class="column dark-column" style="width:100%; max-width:300px;display:inline-block;vertical-align:middle;direction:ltr;background-color: #ffffff;">
                 <div style="padding:32px;background-color: #ffffff;">
                   <p style="margin:0;font-family:Arial,sans-serif;font-size:14px;line-height:18px;">
                     <img src="https://i.postimg.cc/Pf0YnfPd/rocket-up.jpg" width="300" alt="Demand in the labour market keep rising" style="display:block;width:300px;max-width:100%;height:auto;border:0;"/>
@@ -214,7 +226,7 @@
               </td>
               <td style="width:50%;padding:32px;background-color: #ffffff;" valign="middle">
               <![endif]-->
-              <div class="column" style="width:100%; max-width:300px;display:inline-block;vertical-align:middle;background-color: #ffffff;">
+              <div class="column dark-column" style="width:100%; max-width:300px;display:inline-block;vertical-align:middle;background-color: #ffffff;">
                 <div class="padding dark-padding" style="padding:32px;background-color: #ffffff;">
                   <p style="margin:0;font-family:Arial,sans-serif;font-size:14px;line-height:18px;">
                     <img src="https://i.postimg.cc/G34GfT3M/money.jpg" width="300" alt="More money with adjustable work arrangements" style="display:block;width:300px;max-width:100%;height:auto;border:0;"/>
@@ -227,26 +239,26 @@
               </table>
               <![endif]-->
             </div>
-            <table role="presentation" style="width:100%;border:0;border-spacing:0;">
+            <table  role="presentation" style="width:100%;border:0;border-spacing:0;">
               <tr>
-                <td align="center !important" class="dark-column dark-btn" style="padding:15px 32px 32px 32px;background-color: #ffffff !important;">
-                  <p align="center !important" style="margin:0;font-family:Arial,sans-serif;font-size:14px;text-transform: capitalize;text-align:center !important;"><a align="center !important" href="https://example.com/" target="_blank" style="background: #0a6cff;text-decoration: none; padding: 12px 25px; text-align:center !important;color: #ffffff; border-radius: 4px; display:block; mso-padding-alt:0;text-underline-color:#ffffff;text-align: center;"><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%;mso-text-raise:20pt">&nbsp;</i><![endif]--><span style="mso-text-raise:10pt;font-weight:bold;">Seek your next opportunity on JobMatching</span><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%">&nbsp;</i><![endif]--></a>
+                <td class="dark-column" style="padding:25px 32px 32px 32px;background-color: #ffffff;">
+                  <p style="margin:0;font-family:Arial,sans-serif;font-size:14px;text-transform: capitalize;text-align:center;"><a class="keep-white" href="https://example.com/" target="_blank" style="background: #0a6cff;text-decoration: none; padding: 12px 25px; text-align:center;color: #ffffff !important; border-radius: 4px; display:block; mso-padding-alt:0;text-underline-color:#ffffff;text-align: center;"><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%;mso-text-raise:20pt">&nbsp;</i><![endif]--><span style="mso-text-raise:10pt;font-weight:bold;">Seek your next opportunity on JobMatching</span><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%">&nbsp;</i><![endif]--></a>
                   </p>
                 </td>
               </tr>
               <tr>
-                <td class="dark-column" style="padding: 0px 32px 32px; text-align:center;background-color: #ffffff !important;">
+                <td class="dark-column" style="padding: 0px 32px 32px; text-align:center;background-color: #ffffff;">
                   <p style="margin:0;font-family: Arial, Helvetica, sans-serif;font-size:14px;text-transform: capitalize;"><a class="dark-blue" style="color:#0B52BC;text-decoration: underline;line-height:18px;mso-line-height-alt:21px;" target="_blank" href="https://www.example.com">Update your profile</a>
                   </p>
-                  <p class="dark-text" style="margin:8px 0px 0px;font-family: Arial, Helvetica, sans-serif;font-size:14px;color:#555555;mso-line-height-alt:21px;line-height:18px;">to opt in for remote opportunities, select your preferences, and attract attention
+                  <p class="dark-title" style="margin:8px 0px 0px;font-family: Arial, Helvetica, sans-serif;font-size:14px;color:#585858;mso-line-height-alt:21px;line-height:18px;">to opt in for remote opportunities, select your preferences, and attract attention
                     by top recruiters searching for your skills.
                   </p>
                 </td>
               </tr>
               <tr>
-                <td class="dark-background" style="padding:32px;text-align:center;color:#465365;background-color: #f2f4f7 !important;">
+                <td class="dark-background" style="padding:32px;text-align:center;color:#465365;background-color: #f2f4f7;">
                   <p class="dark-title" style="margin:0;font-family:Arial, Helvetica, sans-serif;font-size:12px;line-height:20px;color:#465365;">You're receiving this notification because you're looking for jobs on JobMatching</p>
-                  <p class="dark-title" style="margin:0;font-family:Arial, Helvetica, sans-serif;font-size:12px;line-height:20px;color:#465365;">20 Silver St · Bristol, BR786</p>
+                  <p class="dark-title" style="margin:0;font-family:Arial, Helvetica, sans-serif;font-size:12px;line-height:20px;"><a class="dark-title" style="color:#465365;text-decoration:none;pointer-events:none;" href="https://www.example.com">20 Silver St · Bristol, BR786</a></p>
                 </td>
               </tr>
              </table>

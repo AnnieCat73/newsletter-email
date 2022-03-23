@@ -17,6 +17,14 @@ A responsive promotional email without media queries
 
 I have tested the email on 70 plus different devices and email clients. The email works fine in the majority of the email clients.
 
+Occasionally I have noticed a faint straight line going through the footer section in Outlook. I have looked into this and there is no
+proper fix for this. It has all to do with how Outlook renders your email when you open it. Sometimes it renders it well but
+occasionally you may see this faint line.
+
+The email works well in most email clients that support dark mode except for the images in macOS and Outlook Chrome.
+The padding around the images have a slightly different shade compared to the background colour. I am working on understanding how to
+fix this if there is a fix!
+
 ### The challenge
 
 Creating a fully responsive email without media queries. Most email apps support modern CSS and media queries
@@ -40,7 +48,7 @@ support and for those that do NOT support modern CSS, like media queries. I am u
 - Made it look as good as possible for dark mode
 - I used Desktop-first approach as that's the best practice for email development
 - I tested my email using Email on Acid.
-- I uploaded the email the web via
+- I uploaded the email on the web via Cloudflare
 
 ### Built with
 
