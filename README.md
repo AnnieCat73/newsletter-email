@@ -22,8 +22,7 @@ proper fix for this. It has all to do with how Outlook renders your email when y
 occasionally you may see this faint line.
 
 The email works well in most email clients that support dark mode except for the images in macOS and Outlook Chrome.
-The padding around the images have a slightly different shade compared to the background colour. I am working on understanding how to
-fix this if there is a fix!
+The padding around the images have a slightly different shade compared to the background colour. A fix for this is to export the images as transparent.They must be in png format to do this but unfortunately my images are in jpg so for now they will have to have this shade until I can swap the images!
 
 ### The challenge
 
